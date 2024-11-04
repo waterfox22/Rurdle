@@ -1,0 +1,17 @@
+.button {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #0078D7;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+}
+
+.button-fading {
+    -fx-background-color: #005ba3;
+}
+
+.combo-box {
+    -fx-font-family: "Segoe UI";
+    -fx-background-radius: 5;
+}
