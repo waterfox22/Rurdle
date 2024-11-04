@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-with open("dictionary.txt") as txt:
+with open("dictionary.txt", 'r', encoding='utf-8') as txt:
     dictionary = txt.read().split()
 
 
@@ -23,7 +23,6 @@ def rurdle_generate_word():
 def rurdle_check_java_input(user_input, word):
     fillings = [0, 0, 0, 0, 0]  # 0 grey, 1 yellow, 2 green
     skip_letters = []
-    print(user_input, word)
 
     if user_input == word:
         return [2, 2, 2, 2, 2]
