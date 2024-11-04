@@ -79,4 +79,8 @@ public class Main extends Application {
         stage.setTitle("Rurdle");
         stage.show();
     }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
