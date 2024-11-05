@@ -1,6 +1,6 @@
 Put main.py in **src/main/resources** (it's already here by default) to let Java launch python flask or change working directory in Java Main class. Make sure python library flask is installed.
 
-Then compile Java code in **src/main/java/com/example/russianwordle** or use pre-compiled version (**src/main/resources/russianWordle-1.0-SNAPSHOT.jar**). Make sure JavaFX is installed.
+Then compile Java code in **src/main/java/com/example/russianwordle** or use pre-compiled version (**russianWordle-1.0-SNAPSHOT.jar**). Make sure JavaFX is installed.
 
 Then run it with **java --module-path /path/to/javafx-sdk-23.0.1/lib --add-modules javafx.controls,javafx.fxml com.example.russianwordle.Main** 
 
