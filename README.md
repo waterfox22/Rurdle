@@ -1,4 +1,4 @@
-Run main.py in **src/main/resources** to launch local server to integrate with Java.
+Put main.py in **src/main/resources** (it's already here by default) to let Java launch python flask or change working directory in Java Main class. Make sure python library flask is installed.
 
 Then compile Java code in **src/main/java/com/example/russianwordle** or use pre-compiled version (**src/main/resources/russianWordle-1.0-SNAPSHOT.jar**). Make sure JavaFX is installed.
 
