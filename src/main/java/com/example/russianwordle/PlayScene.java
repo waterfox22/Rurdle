@@ -39,7 +39,7 @@ public class PlayScene {
                 wordToGuess = StringEscapeUtils.unescapeJava(in.readLine()).substring(1, 6);
             }
         } catch (Exception e) {
-            System.out.printf("Cause: %s", e.getCause());
+            System.out.printf("CONNECTION FAILED: %s\n", e);
         }
 
         textFields = new TextField[5];

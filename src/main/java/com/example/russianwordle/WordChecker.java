@@ -39,7 +39,7 @@ public class WordChecker {
                                 wordExists = Boolean.parseBoolean(jsonString);
                             }
                         } catch (Exception e) {
-                            System.out.printf("Cause: %s", e.getCause());
+                            System.out.printf("Cause: %s\n", e);
                         }
                         if (wordExists) {
                             setFillOnTiles(getFillings(result.toString(), playScene), textFields);

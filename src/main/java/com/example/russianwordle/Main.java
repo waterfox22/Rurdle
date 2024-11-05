@@ -9,6 +9,8 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 
 public class Main extends Application {
@@ -81,6 +83,20 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        String flaskServer = "main.py";
+        ProcessBuilder processBuilder = new ProcessBuilder("python", flaskServer);
+        processBuilder.directory(new File("src/main/resources"));
+        try {
+            Process process = processBuilder.start();
+            Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+                process.destroy();
+                System.out.println("flask stopped");
+            }));
+            System.out.println("flask started");
+        } catch (IOException e) {
+            System.out.printf("Cause: %s\n", e.getCause());
+        }
+
         launch(args);
     }
 }
